@@ -1,0 +1,127 @@
+article.tweet-container {
+  width: 386px;
+  margin: 100px auto;
+
+}
+
+
+article.tweet-container header {
+  height: 70px;
+  background-color: #eee;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #CCCCCC;
+}
+
+article.tweet-container:hover header {
+  border-color: black;
+  background-color: #EEEEEE;
+}
+
+article.tweet-container header img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  float: left;
+  opacity: 0.5;
+}
+
+article.tweet-container:hover header img {
+  opacity: 1.0
+}
+
+article.tweet-container header h2 {
+  margin: auto;
+  padding: 15px 15px 15px 5px;
+  display: inline-block;
+  float: left;
+  opacity: 0.5;
+}
+
+article.tweet-container:hover header h2 {
+  opacity: 1.0;
+}
+
+article.tweet-container header h3 {
+  float: right;
+  padding-right: 10px;
+  font-size: 15px;
+  color: grey;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+article.tweet-container:hover header h3 {
+  opacity: 1.0;
+}
+
+article.tweet-container .content p {
+  margin: 0px;
+  padding: 8% 2%;
+  font-size: 20px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+
+article.tweet-container:hover p {
+  border-color: black;
+}
+
+article.tweet-container footer {
+  padding: 2% 2%;
+  border: 1px solid #CCCCCC;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+article.tweet-container footer p {
+  margin: 0;
+  font-size: 13px;
+  float: left;
+}
+
+article.tweet-container:hover footer {
+  border-left-color: black;
+  border-right-color: black;
+  border-bottom-color: black;
+}
+
+article.tweet-container .flag {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  float: right;
+
+}
+
+
+article.tweet-container .heart {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  float: right;
+
+}
+
+article.tweet-container .reuse {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  float: right;
+
+}
+article.tweet-container .hidden{
+  visibility: hidden;
+}
+
+article.tweet-container:hover .hidden {
+  visibility: visible;
+}

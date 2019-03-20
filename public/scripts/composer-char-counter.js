@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('#tweetText').on('keyup',function(event) {
     const leftCharacters = 140 - $(this).val().length;
     const counter = $(this).siblings('.counter');
-    $('.counter').text(leftCharacters);
+    counter.text(leftCharacters)
 
     if (leftCharacters < 0) {
       counter.css({"color": "red"})
@@ -10,6 +10,4 @@ $(document).ready(function() {
       counter.css({"color": "black"})
     }
   })
-
-
 })

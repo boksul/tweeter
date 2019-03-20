@@ -21,3 +21,11 @@
 
 }
 
+#nav-bar .compose {
+  float: right;
+  height: 50px;
+  width: 80px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 5px;
+}

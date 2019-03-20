@@ -4,6 +4,13 @@ article.tweet-container {
 
 }
 
+.tooManyWords-error {
+  opacity: 0;
+}
+.noWords-error {
+  opacity: 0;
+}
+
 
 article.tweet-container header {
   height: 70px;

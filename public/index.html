@@ -30,36 +30,29 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="compose" type="compose" value="compose">Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div class="tooManyWords-error">
+        <ul><li>Too many characters in one tweet!</li></ul>
+      </div>
+      <div class="noWords-error">
+        <ul><li>Nothing to tweet!</li></ul>
+      </div>
+
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets" id=tweet_form>
-        <textarea name="text" id="tweetText" placeholder="What are you humming about?"></textarea>
+        <textarea name="text" class="new-tweet" id="tweetText" placeholder="What are you humming about?"></textarea>
         <input type="submit" value="Tweet">
         <span class="counter">140</span>
         </form>
       </section>
 
       <section id="tweets"></section>
-      <!-- <article class="tweet-container"> -->
-        <!-- <header>
-          <img class="logo" src="/images/faceAvatar.png">
-          <h2>Bill Fields</h2>
-          <h3>@MrFields</h3>
-        </header>
-        <p>
-          Little tweet here
-        </p>
-        <footer>10 days ago
-        <img class="hidden heart" src="/images/twitterHeart.png">
-        <img class="hidden reuse" src="/images/twitterReuse.png">
-        <img class="hidden flag" src="/images/twitterFlag.png">
-        </footer> -->
-
-      <!-- </article> -->
 
     </main>
 

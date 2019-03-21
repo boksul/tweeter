@@ -9,7 +9,7 @@ function createTweetElement(tweetData) {
   const small = tweetData.user.avatars.small
   const handle = tweetData.user.handle
   const comment = tweetData.content.text
-  const date = tweetData.created_at
+  const date = new Date(tweetData.created_at)
   const $article = $('<article>');
   $article.addClass('tweet-container');
   //create img
@@ -68,16 +68,17 @@ function renderTweets(tweets) {
   }
 }
 
+function loadTweets() {
+  $.ajax('http://localhost:8080/tweets', { method: 'GET'})
+  .then(
+    (tweets) => {
+      renderTweets(tweets)
+    }
+  )
+}
 
 $(document).ready(() => {
-  function loadTweets() {
-    $.ajax('http://localhost:8080/tweets', { method: 'GET'})
-    .then(
-      (tweets) => {
-        renderTweets(tweets)
-      }
-    )
-  }
+
   loadTweets()
 
   $('#nav-bar .compose').on('click', function(e) {

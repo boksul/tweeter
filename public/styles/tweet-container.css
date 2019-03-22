@@ -1,6 +1,6 @@
 article.tweet-container {
   width: 386px;
-  margin: 100px auto;
+  margin: 50px auto;
 
 }
 
@@ -44,7 +44,6 @@ article.tweet-container:hover header img {
 article.tweet-container header h2 {
   margin: auto;
   padding: 15px 15px 15px 5px;
-  display: inline-block;
   float: left;
   opacity: 0.5;
 }
@@ -72,6 +71,7 @@ article.tweet-container .content p {
   font-size: 20px;
   border-left: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
+  overflow-wrap: break-word;
 }
 
 article.tweet-container:hover p {

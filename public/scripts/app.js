@@ -9,7 +9,7 @@ function createTweetElement(tweetData) {
   const small = tweetData.user.avatars.small
   const handle = tweetData.user.handle
   const comment = tweetData.content.text
-  const date = new Date(tweetData.created_at)
+  const date = moment(tweetData.created_at).fromNow();
   const $article = $('<article>');
   $article.addClass('tweet-container');
   //create img
@@ -63,7 +63,6 @@ function renderTweets(tweets) {
   $("#tweets").html("")
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    console.log('tweet:', $tweet);
     $("#tweets").prepend($tweet);
   }
 }
@@ -96,7 +95,7 @@ $(document).ready(() => {
     event.preventDefault();
     var tweetText = $('#tweetText').val();
   //validations before submitting
-    if (tweetText === null || tweetText === "") {
+    if (tweetText === null || tweetText === "" || tweetText === " ") {
       noWords.css({"opacity": "1"})
     } else if (tweetText.length > 140) {
       tooMany.css({"opacity": "1"})
